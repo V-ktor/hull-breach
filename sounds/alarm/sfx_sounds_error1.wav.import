@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/sfx_sounds_error1.wav-0a940062dab33d29a34f4503eea2496b.sample"
+
+[deps]
+
+source_file="res://sounds/alarm/sfx_sounds_error1.wav"
+source_md5="f0fefb21f343a199ca4b50e2a2381dcf"
+
+dest_files=[ "res://.import/sfx_sounds_error1.wav-0a940062dab33d29a34f4503eea2496b.sample" ]
+dest_md5="3a42a5e887dfa553bfdc427c2dd7da49"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

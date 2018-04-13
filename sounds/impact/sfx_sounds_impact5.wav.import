@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/sfx_sounds_impact5.wav-4f8aea7fcce5c01884c0fb9d53c50899.sample"
+
+[deps]
+
+source_file="res://sounds/impact/sfx_sounds_impact5.wav"
+source_md5="4a53750c257b9da1bb61de412682274c"
+
+dest_files=[ "res://.import/sfx_sounds_impact5.wav-4f8aea7fcce5c01884c0fb9d53c50899.sample" ]
+dest_md5="d646196dc173ca0d4d0b72fa740f95b4"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

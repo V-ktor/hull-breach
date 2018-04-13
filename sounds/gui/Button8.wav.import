@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Button8.wav-755c37b4aa8854d606ff066fbef71f76.sample"
+
+[deps]
+
+source_file="res://sounds/gui/Button8.wav"
+source_md5="45d77ef065bb92dc59d6acff372cbbe2"
+
+dest_files=[ "res://.import/Button8.wav-755c37b4aa8854d606ff066fbef71f76.sample" ]
+dest_md5="87c0f5c743114b07f99fc2a1eef5cfd3"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

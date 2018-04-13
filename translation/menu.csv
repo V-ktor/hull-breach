@@ -1,0 +1,40 @@
+,en
+START,Start
+OPTIONS,Options
+HIGHSCORES,Highscores
+QUIT,Quit
+BACK,Back
+RESOLUTION,Resolution
+SOUND,Sound
+CONTROL,Control
+THRUST,Thrust
+REVERSE_THRUST,Reverse Thrust
+STRAFE_LEFT,Strafe Left
+STRAFE_RIGHT,Strafe Right
+TURN_LEFT,Turn Left
+TURN_RIGHT,Turn Right
+SHOOT,Shoot
+SPECIAL,Special
+ADD_KEY,Add Key
+KEY_PRESSED,key pressed
+NEW_HIGHSCORE,New Highscore
+ENTER_NAME,enter name
+OK,OK
+CANCLE,Cancel
+APPLY,Apply
+SELECT_PLAYER,Select Player
+SELECT_DIFFICULTY,Select Difficulty
+LOADING,loading
+SPEED,Speed
+POWER,Power
+ARMOR,Armor
+FIRE_RATE,Fire Rate
+SPECIAL,Special
+MISSILES,Missiles
+MINE,Mine
+SHIELD,Shield
+SCORE,Score
+EASY,Easy
+NORMAL,Normal
+HARD,Hard
+
