@@ -42,4 +42,10 @@ NORMAL,Normal
 HARD,Hard
 GRAPHICS,Graphics
 SOUNDS,Sounds
+FONT,font
+BY,by
+UI_SOUNDS,UI sounds
+SPACE_SHIELD_SOUNDS,space shield sounds
+ALARM_AND_IMPACT_SOUNDS,alarm and impact sounds
+EXPLOSION_SOUNDS,explosion sounds
 
