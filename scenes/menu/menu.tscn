@@ -575,7 +575,7 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[node name="Menu" type="CanvasLayer" index="0"]
+[node name="Menu" type="CanvasLayer"]
 
 layer = 100
 offset = Vector2( 0, 0 )

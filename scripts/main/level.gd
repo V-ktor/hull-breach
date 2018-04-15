@@ -202,6 +202,27 @@ func _process(delta):
 				ei.set_linear_velocity(Vector2(-100,0).rotated(ang))
 				add_child(ei)
 				delay = (rand_range(1.0,4.0)+sqrt(enemy.size())*rand_range(0.2,0.4))*(10.0-difficulty)/10.0
+			elif (randf()<0.1):
+				var last
+				var ang = 2*PI*randf()
+				var pos = pos_p+Vector2(1000,0).rotated(ang)
+				var parts = []
+				parts.resize(randi()%6+6)
+				for i in range(parts.size()):
+					var ei = preload("res://scenes/enemy/snake.tscn").instance()
+					ei.set_global_position(pos)
+					ei.set_rotation(ang+PI)
+					ei.hp = round(ei.hp*(10.0+difficulty)/10.0+difficulty)
+					ei.set_linear_velocity(Vector2(-100,0).rotated(ang))
+					if (last!=null):
+						ei.get_node("PinJoint").set_node_b(last.get_path())
+					add_child(ei)
+					last = ei
+					parts[i] = ei
+					pos += Vector2(32,0).rotated(ang)
+					for j in range(i):
+						ei.add_collision_exception_with(parts[j])
+				delay = (rand_range(1.0,3.0)+sqrt(enemy.size())*rand_range(0.2,0.4))*(10.0-difficulty)/10.0
 			else:
 				var ei = enemies[randi()%(enemies.size())].instance()
 				var ang = 2*PI*randf()
