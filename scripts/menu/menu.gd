@@ -77,6 +77,7 @@ func _start():
 	get_node("Animation").play("fade_out")
 
 func _game_over(s):
+	_unpause()
 	get_node("Animation").play("fade_out")
 	yield(get_node("Animation"),"animation_finished")
 	hs_score = floor(s*(1.0+0.25*difficulty))
@@ -85,7 +86,8 @@ func _game_over(s):
 	started = false
 	show_menu()
 	UI._hide()
-	check_highscore()
+	if (s>0):
+		check_highscore()
 	_show_level()
 	get_node("Animation").play("fade_in")
 	Music.fade_out(3.0)
@@ -192,6 +194,14 @@ func _quit():
 	save_settings()
 	get_tree().quit()
 
+func _pause():
+	get_tree().set_pause(true)
+	get_node("Pause").show()
+
+func _unpause():
+	get_tree().set_pause(false)
+	get_node("Pause").hide()
+
 
 # load/save
 
@@ -261,7 +271,7 @@ func save_settings():
 func default_hs():
 	highscores.resize(10)
 	for i in range(10):
-		highscores[i] = {"score":100*round(2+0.8*(10-i)*sqrt(10-i)),"name":"NAME"+str(i+1)}
+		highscores[i] = {"score":100*round(2+0.7*(10-i)*sqrt(10-i)),"name":"NAME"+str(i+1)}
 
 
 # settings
@@ -420,6 +430,8 @@ func _resized():
 	get_node("AddKey").set_position((OS.get_window_size()-scale*get_node("AddKey").get_size())/2)
 	get_node("Highscore").set_scale(scale*Vector2(1,1))
 	get_node("Highscore").set_position((OS.get_window_size()-scale*get_node("AddKey").get_size())/2)
+	get_node("Pause").set_scale(scale*Vector2(1,1))
+	get_node("Pause").set_position((OS.get_window_size()-scale*get_node("AddKey").get_size())/2)
 	settings["fullscreen"] = OS.is_window_fullscreen()
 	settings["maximized"] = OS.is_window_maximized()
 	settings["resolution_x"] = OS.get_window_size().x
@@ -430,8 +442,13 @@ func _resized():
 func _input(event):
 	if (event is InputEventKey):
 		if (event.is_action_pressed("ui_cancel")):
-			if (!started || get_node("AddKey").visible):
-				show_menu()
+			if (!started):
+				if (get_node("AddKey").visible):
+					show_menu()
+			elif (get_node("Pause").is_visible()):
+				_unpause()
+			else:
+				_pause()
 		elif (get_node("AddKey").visible):
 			new_event = event
 			get_node("AddKey/Label").set_text(OS.get_scancode_string(event.scancode))
@@ -464,6 +481,8 @@ func _ready():
 	get_node("Options/Resolution/Resolution/ResY").connect("value_changed",self,"_set_resolution_y")
 	get_node("Options/Audio/Music/SpinBox").connect("value_changed",self,"_set_music")
 	get_node("Options/Audio/Sound/SpinBox").connect("value_changed",self,"_set_sound")
+	get_node("Pause/Button1").connect("pressed",self,"_unpause")
+	get_node("Pause/Button2").connect("pressed",self,"_game_over",[0])
 	for action in ACTIONS:
 		var string = action.capitalize().replace(" ","_")
 		var button = get_node("Options/Control/VBoxContainer/Base").duplicate()
@@ -541,6 +560,12 @@ func _ready():
 	get_node("Highscore/Button").connect("pressed",get_node("SoundP"),"play")
 	get_node("Highscore/LineEdit").connect("focus_entered",get_node("SoundH"),"play")
 	get_node("Highscore/LineEdit").connect("text_entered",get_node("SoundP"),"play")
+	get_node("Pause/Button1").connect("focus_entered",get_node("SoundH"),"play")
+	get_node("Pause/Button1").connect("mouse_entered",get_node("SoundH"),"play")
+	get_node("Pause/Button1").connect("pressed",get_node("SoundP"),"play")
+	get_node("Pause/Button2").connect("focus_entered",get_node("SoundH"),"play")
+	get_node("Pause/Button2").connect("mouse_entered",get_node("SoundH"),"play")
+	get_node("Pause/Button2").connect("pressed",get_node("SoundP"),"play")
 	
 	load_settings()
 	show_menu()
@@ -609,5 +634,4 @@ func _ready():
 	get_node("Credits/Text").append_bbcode("[url=https://opengameart.org/content/9-explosion-sounds]{opengameart.org}[/url]")
 	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
 	get_node("Credits/Text").add_text(")\n")
-	
 	get_node("Credits/Text").connect("meta_clicked",OS,"shell_open")

@@ -731,12 +731,14 @@ tracks/1/keys = {
 
 [node name="Menu" type="CanvasLayer" index="0"]
 
+pause_mode = 2
 layer = 100
 offset = Vector2( 0, 0 )
 rotation = 0.0
 scale = Vector2( 1, 1 )
 transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 script = ExtResource( 1 )
+_sections_unfolded = [ "Pause" ]
 
 [node name="Background" type="TextureRect" parent="." index="0"]
 
@@ -4319,7 +4321,146 @@ flat = false
 align = 1
 _sections_unfolded = [ "Margin" ]
 
-[node name="Black" type="Panel" parent="." index="9"]
+[node name="Pause" type="Panel" parent="." index="9"]
+
+visible = false
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 125.0
+margin_top = 160.0
+margin_right = 320.0
+margin_bottom = 248.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+theme = SubResource( 18 )
+_sections_unfolded = [ "Pause" ]
+
+[node name="Panel" type="Panel" parent="Pause" index="0"]
+
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+margin_top = -20.0
+margin_bottom = -5.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+_sections_unfolded = [ "Margin" ]
+
+[node name="Label" type="Label" parent="Pause/Panel" index="0"]
+
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -16.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+text = "PAUSE"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Margin" ]
+
+[node name="Button" type="Button" parent="Pause/Panel" index="1"]
+
+light_mask = 0
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -16.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "X"
+flat = false
+align = 1
+_sections_unfolded = [ "Margin" ]
+
+[node name="Button1" type="Button" parent="Pause" index="1"]
+
+light_mask = 0
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -55.0
+margin_top = -20.0
+margin_right = -5.0
+margin_bottom = -5.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "CONITNUE"
+flat = false
+align = 1
+_sections_unfolded = [ "Margin" ]
+
+[node name="Button2" type="Button" parent="Pause" index="2"]
+
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = -20.0
+margin_right = 55.0
+margin_bottom = -5.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "QUIT"
+flat = false
+align = 1
+_sections_unfolded = [ "Anchor", "Margin" ]
+
+[node name="Black" type="Panel" parent="." index="10"]
 
 visible = false
 modulate = Color( 1, 1, 1, 0 )
@@ -4337,7 +4478,7 @@ size_flags_vertical = 1
 custom_styles/panel = SubResource( 20 )
 _sections_unfolded = [ "Anchor", "Margin", "Visibility", "custom_styles" ]
 
-[node name="SoundP" type="AudioStreamPlayer" parent="." index="10"]
+[node name="SoundP" type="AudioStreamPlayer" parent="." index="11"]
 
 stream = ExtResource( 23 )
 volume_db = -16.0
@@ -4345,7 +4486,7 @@ autoplay = false
 mix_target = 0
 bus = "Sound"
 
-[node name="SoundH" type="AudioStreamPlayer" parent="." index="11"]
+[node name="SoundH" type="AudioStreamPlayer" parent="." index="12"]
 
 stream = ExtResource( 24 )
 volume_db = -16.0
@@ -4353,7 +4494,7 @@ autoplay = false
 mix_target = 0
 bus = "Sound"
 
-[node name="Animation" type="AnimationPlayer" parent="." index="12"]
+[node name="Animation" type="AnimationPlayer" parent="." index="13"]
 
 root_node = NodePath("..")
 autoplay = ""
@@ -4375,5 +4516,7 @@ blend_times = [  ]
 [connection signal="pressed" from="AddKey/ButtonC" to="AddKey" method="hide"]
 
 [connection signal="pressed" from="Highscore/Panel/Button" to="Highscore" method="hide"]
+
+[connection signal="pressed" from="Pause/Panel/Button" to="Pause" method="hide"]
 
 

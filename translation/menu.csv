@@ -3,6 +3,8 @@ START,Start
 OPTIONS,Options
 CREDITS,Credits
 HIGHSCORES,Highscores
+PAUSE,Pause
+CONTINUE,Continue
 QUIT,Quit
 BACK,Back
 RESOLUTION,Resolution

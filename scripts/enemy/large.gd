@@ -3,7 +3,7 @@ extends RigidBody2D
 export var hp = 300
 export var la = 175.0
 export var aa = 0.004
-export var score = 400
+export var score = 375
 export var size = 2
 var frame = 0
 var frames = 0

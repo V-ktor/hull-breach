@@ -782,7 +782,7 @@ tracks/0/keys = {
 "values": [ 0.0, 0.5, 0.0 ]
 }
 
-[node name="Enemy" type="RigidBody2D"]
+[node name="Enemy" type="RigidBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 22
@@ -807,7 +807,7 @@ _sections_unfolded = [ "Angular", "Collision", "Linear" ]
 hp = 300
 la = 175.0
 aa = 0.004
-score = 400
+score = 375
 size = 2
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
