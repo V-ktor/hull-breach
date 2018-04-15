@@ -1,6 +1,7 @@
 ,en
 START,Start
 OPTIONS,Options
+CREDITS,Credits
 HIGHSCORES,Highscores
 QUIT,Quit
 BACK,Back
@@ -37,4 +38,6 @@ SCORE,Score
 EASY,Easy
 NORMAL,Normal
 HARD,Hard
+GRAPHICS,Graphics
+SOUNDS,Sounds
 

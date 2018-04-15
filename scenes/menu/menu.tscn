@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=52 format=2]
 
 [ext_resource path="res://scripts/menu/menu.gd" type="Script" id=1]
 [ext_resource path="res://images/background/depth.png" type="Texture" id=2]
@@ -414,6 +414,151 @@ anti_aliasing = false
 anti_aliasing_size = 1
 _sections_unfolded = [ "Anti Aliasing", "Border", "Border Width", "Corner Radius" ]
 
+[sub_resource type="StyleBoxFlat" id=24]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0.156863, 0.219608, 0.352941, 0.752941 )
+draw_center = true
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+border_blend = false
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+corner_detail = 8
+expand_margin_left = 6.0
+expand_margin_right = 0.0
+expand_margin_top = 1.0
+expand_margin_bottom = 1.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = false
+anti_aliasing_size = 1
+_sections_unfolded = [ "Anti Aliasing", "Border", "Border Width", "Content Margin", "Corner Radius", "Expand Margin" ]
+
+[sub_resource type="StyleBoxFlat" id=25]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0.156863, 0.219608, 0.352941, 0.752941 )
+draw_center = true
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+border_blend = false
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+corner_detail = 8
+expand_margin_left = 6.0
+expand_margin_right = 0.0
+expand_margin_top = 1.0
+expand_margin_bottom = 1.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = false
+anti_aliasing_size = 1
+_sections_unfolded = [ "Anti Aliasing", "Border", "Border Width", "Content Margin", "Corner Radius", "Expand Margin" ]
+
+[sub_resource type="StyleBoxFlat" id=26]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0.0392157, 0.054902, 0.0901961, 0.752941 )
+draw_center = true
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+border_blend = false
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+corner_detail = 8
+expand_margin_left = 6.0
+expand_margin_right = 0.0
+expand_margin_top = 1.0
+expand_margin_bottom = 1.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = false
+anti_aliasing_size = 1
+_sections_unfolded = [ "Anti Aliasing", "Border", "Border Width", "Content Margin", "Corner Radius", "Expand Margin" ]
+
+[sub_resource type="StyleBoxFlat" id=23]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0.0784314, 0.109804, 0.176471, 0.752941 )
+draw_center = true
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+border_blend = false
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+corner_detail = 8
+expand_margin_left = 6.0
+expand_margin_right = 0.0
+expand_margin_top = 0.0
+expand_margin_bottom = 0.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = false
+anti_aliasing_size = 1
+_sections_unfolded = [ "Anti Aliasing", "Border", "Border Width", "Corner Radius", "Expand Margin" ]
+
+[sub_resource type="StyleBoxFlat" id=27]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0.0784314, 0.109804, 0.176471, 0.752941 )
+draw_center = true
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+border_blend = false
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+corner_detail = 8
+expand_margin_left = 6.0
+expand_margin_right = 0.0
+expand_margin_top = 0.0
+expand_margin_bottom = 0.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = false
+anti_aliasing_size = 1
+_sections_unfolded = [ "Anti Aliasing", "Border", "Border Width", "Corner Radius", "Expand Margin" ]
+
 [sub_resource type="Theme" id=18]
 
 default_font = ExtResource( 18 )
@@ -457,7 +602,16 @@ Panel/styles/panel = SubResource( 17 )
 Panel/styles/panelf = null
 Panel/styles/panelnc = null
 SpinBox/icons/updown = ExtResource( 17 )
-_sections_unfolded = [ "Button", "Button/styles", "Panel", "Panel/styles" ]
+VScrollBar/icons/decrement = null
+VScrollBar/icons/decrement_highlight = null
+VScrollBar/icons/increment = null
+VScrollBar/icons/increment_highlight = null
+VScrollBar/styles/grabber = SubResource( 24 )
+VScrollBar/styles/grabber_highlight = SubResource( 25 )
+VScrollBar/styles/grabber_pressed = SubResource( 26 )
+VScrollBar/styles/scroll = SubResource( 23 )
+VScrollBar/styles/scroll_focus = SubResource( 27 )
+_sections_unfolded = [ "Button", "Panel", "Panel/styles", "VScrollBar", "VScrollBar/icons", "VScrollBar/styles" ]
 
 [sub_resource type="StyleBoxFlat" id=19]
 
@@ -575,7 +729,7 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[node name="Menu" type="CanvasLayer"]
+[node name="Menu" type="CanvasLayer" index="0"]
 
 layer = 100
 offset = Vector2( 0, 0 )
@@ -985,7 +1139,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 11 )
-text = "0.1"
+text = "v0.9"
 align = 2
 valign = 2
 percent_visible = 1.0
@@ -1012,7 +1166,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 2
 size_flags_vertical = 2
 theme = SubResource( 18 )
-_sections_unfolded = [ "Theme" ]
+_sections_unfolded = [ "Anchor", "Margin", "Theme" ]
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel" index="0"]
 
@@ -1042,7 +1196,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 65.0
-margin_bottom = 27.0
+margin_bottom = 19.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -1065,9 +1219,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 31.0
+margin_top = 23.0
 margin_right = 65.0
-margin_bottom = 58.0
+margin_bottom = 42.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -1083,14 +1237,39 @@ text = "OPTIONS"
 flat = false
 align = 1
 
-[node name="Button2" type="Button" parent="Panel/VBoxContainer" index="2"]
+[node name="Button4" type="Button" parent="Panel/VBoxContainer" index="2"]
 
 light_mask = 0
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 62.0
+margin_top = 46.0
+margin_right = 65.0
+margin_bottom = 65.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "CREDITS"
+flat = false
+align = 1
+
+[node name="Button2" type="Button" parent="Panel/VBoxContainer" index="3"]
+
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 69.0
 margin_right = 65.0
 margin_bottom = 90.0
 rect_pivot_offset = Vector2( 0, 0 )
@@ -2702,28 +2881,7 @@ flat = false
 align = 1
 _sections_unfolded = [ "Margin" ]
 
-[node name="Icon" type="TextureRect" parent="Level" index="1"]
-
-light_mask = 0
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 5.0
-margin_top = 30.0
-margin_right = -60.0
-margin_bottom = 5.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 2
-size_flags_vertical = 2
-expand = true
-stretch_mode = 4
-_sections_unfolded = [ "Margin" ]
-
-[node name="Button" type="Button" parent="Level" index="2"]
+[node name="Button" type="Button" parent="Level" index="1"]
 
 light_mask = 0
 anchor_left = 1.0
@@ -2750,7 +2908,7 @@ flat = false
 align = 1
 _sections_unfolded = [ "Margin" ]
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Level" index="3"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Level" index="2"]
 
 light_mask = 0
 anchor_left = 1.0
@@ -2848,7 +3006,7 @@ text = "HARD"
 flat = false
 align = 1
 
-[node name="Label" type="Label" parent="Level" index="4"]
+[node name="Label" type="Label" parent="Level" index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -2872,7 +3030,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Anchor", "Margin" ]
 
-[node name="Ranks" type="Label" parent="Level" index="5"]
+[node name="Ranks" type="Label" parent="Level" index="4"]
 
 light_mask = 0
 anchor_left = 0.0
@@ -2912,7 +3070,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Margin" ]
 
-[node name="Scores" type="Label" parent="Level" index="6"]
+[node name="Scores" type="Label" parent="Level" index="5"]
 
 light_mask = 0
 anchor_left = 0.0
@@ -2938,7 +3096,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Anchor", "Margin" ]
 
-[node name="Names" type="Label" parent="Level" index="7"]
+[node name="Names" type="Label" parent="Level" index="6"]
 
 light_mask = 0
 anchor_left = 0.5
@@ -3683,7 +3841,121 @@ flat = false
 align = 1
 _sections_unfolded = [ "Margin" ]
 
-[node name="AddKey" type="Panel" parent="." index="6"]
+[node name="Credits" type="Panel" parent="." index="6"]
+
+editor/display_folded = true
+visible = false
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 25.0
+margin_top = 60.0
+margin_right = 320.0
+margin_bottom = 248.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+theme = SubResource( 18 )
+_sections_unfolded = [ "Theme" ]
+
+[node name="Panel" type="Panel" parent="Credits" index="0"]
+
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+margin_top = -20.0
+margin_bottom = -5.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+
+[node name="Label" type="Label" parent="Credits/Panel" index="0"]
+
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -16.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+text = "CREDITS"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Anchor", "Margin" ]
+
+[node name="Button" type="Button" parent="Credits/Panel" index="1"]
+
+light_mask = 0
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -16.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "X"
+flat = false
+align = 1
+_sections_unfolded = [ "Margin" ]
+
+[node name="Text" type="RichTextLabel" parent="Credits" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = ""
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "Anchor", "BBCode", "Margin" ]
+
+[node name="AddKey" type="Panel" parent="." index="7"]
 
 editor/display_folded = true
 visible = false
@@ -3867,7 +4139,7 @@ flat = false
 align = 1
 _sections_unfolded = [ "Margin" ]
 
-[node name="Highscore" type="Panel" parent="." index="7"]
+[node name="Highscore" type="Panel" parent="." index="8"]
 
 editor/display_folded = true
 visible = false
@@ -4047,7 +4319,7 @@ flat = false
 align = 1
 _sections_unfolded = [ "Margin" ]
 
-[node name="Black" type="Panel" parent="." index="8"]
+[node name="Black" type="Panel" parent="." index="9"]
 
 visible = false
 modulate = Color( 1, 1, 1, 0 )
@@ -4065,7 +4337,7 @@ size_flags_vertical = 1
 custom_styles/panel = SubResource( 20 )
 _sections_unfolded = [ "Anchor", "Margin", "Visibility", "custom_styles" ]
 
-[node name="SoundP" type="AudioStreamPlayer" parent="." index="9"]
+[node name="SoundP" type="AudioStreamPlayer" parent="." index="10"]
 
 stream = ExtResource( 23 )
 volume_db = -16.0
@@ -4073,7 +4345,7 @@ autoplay = false
 mix_target = 0
 bus = "Sound"
 
-[node name="SoundH" type="AudioStreamPlayer" parent="." index="10"]
+[node name="SoundH" type="AudioStreamPlayer" parent="." index="11"]
 
 stream = ExtResource( 24 )
 volume_db = -16.0
@@ -4081,7 +4353,7 @@ autoplay = false
 mix_target = 0
 bus = "Sound"
 
-[node name="Animation" type="AnimationPlayer" parent="." index="11"]
+[node name="Animation" type="AnimationPlayer" parent="." index="12"]
 
 root_node = NodePath("..")
 autoplay = ""
@@ -4095,6 +4367,8 @@ blend_times = [  ]
 [connection signal="pressed" from="Player/Panel/Button" to="Player" method="hide"]
 
 [connection signal="pressed" from="Level/Panel/Button" to="Level" method="hide"]
+
+[connection signal="pressed" from="Credits/Panel/Button" to="Credits" method="hide"]
 
 [connection signal="pressed" from="AddKey/Panel/Button" to="AddKey" method="hide"]
 

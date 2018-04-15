@@ -16,7 +16,7 @@ tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"transitions": PoolRealArray( 0.5, 1 ),
 "update": 0,
 "values": [ -80.0, 0.0 ]
 }
@@ -35,12 +35,12 @@ tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"transitions": PoolRealArray( 2, 1 ),
 "update": 0,
 "values": [ 0.0, -80.0 ]
 }
 
-[node name="Music" type="Node" index="0"]
+[node name="Music" type="Node"]
 
 script = ExtResource( 1 )
 

@@ -1,6 +1,6 @@
 extends Node
 
-const VERSION = "0.1"
+const VERSION = "v0.9"
 const ACTIONS = ["thrust","reverse_thrust","strafe_left","strafe_right","shoot","special"]
 const SHIPS = [
 {"hp":4,"sp":4,"la": 75.0,"aa":3.5,"weapon":0,"fire_rate":5.0,"scene":preload("res://scenes/ships/ship1.tscn"),"s_icon":preload("res://images/gui/ship1_icon.png"),"w_icon":preload("res://images/gui/weapon_mg.png")},
@@ -88,6 +88,7 @@ func _game_over(s):
 	check_highscore()
 	_show_level()
 	get_node("Animation").play("fade_in")
+	Music.fade_out(3.0)
 
 func check_highscore():
 	for i in range(highscores.size()):
@@ -101,6 +102,7 @@ func _show_level():
 	get_node("Player").hide()
 	get_node("Options").hide()
 	get_node("Level").show()
+	get_node("Credits").hide()
 	get_node("AddKey").hide()
 	update_highscore()
 
@@ -109,6 +111,7 @@ func _show_player():
 	get_node("Player").show()
 	get_node("Options").hide()
 	get_node("Level").hide()
+	get_node("Credits").hide()
 	get_node("AddKey").hide()
 
 func _show_options():
@@ -121,6 +124,14 @@ func _show_options():
 	get_node("Player").hide()
 	get_node("Options").show()
 	get_node("Level").hide()
+	get_node("Credits").hide()
+	get_node("AddKey").hide()
+
+func _show_credits():
+	get_node("Player").hide()
+	get_node("Options").hide()
+	get_node("Level").hide()
+	get_node("Credits").show()
 	get_node("AddKey").hide()
 
 func _show_res():
@@ -403,6 +414,8 @@ func _resized():
 	get_node("Level").set_position((OS.get_window_size()-scale*get_node("Level").get_size())/2)
 	get_node("Options").set_scale(scale*Vector2(1,1))
 	get_node("Options").set_position((OS.get_window_size()-scale*get_node("Options").get_size())/2)
+	get_node("Credits").set_scale(scale*Vector2(1,1))
+	get_node("Credits").set_position((OS.get_window_size()-scale*get_node("Credits").get_size())/2)
 	get_node("AddKey").set_scale(scale*Vector2(1,1))
 	get_node("AddKey").set_position((OS.get_window_size()-scale*get_node("AddKey").get_size())/2)
 	get_node("Highscore").set_scale(scale*Vector2(1,1))
@@ -435,6 +448,7 @@ func _ready():
 		get_node("Panel/VBoxContainer/Button2").hide()
 	get_node("Panel/VBoxContainer/Button1").connect("pressed",self,"_show_level")
 	get_node("Panel/VBoxContainer/Button3").connect("pressed",self,"_show_options")
+	get_node("Panel/VBoxContainer/Button4").connect("pressed",self,"_show_credits")
 	get_node("Panel/VBoxContainer/Button2").connect("pressed",self,"_quit")
 	for i in range(3):
 		get_node("Player/HBoxContainer/Ship"+str(i+1)).connect("pressed",self,"_select_ship",[i])
@@ -531,3 +545,69 @@ func _ready():
 	load_settings()
 	show_menu()
 	_resized()
+	Music.change_to("intro")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_green.tres"))
+	get_node("Credits/Text").add_text("Hull Breach Credits\n\n\n")
+	get_node("Credits/Text").add_text(tr("GRAPHICS")+"\n\n")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
+	get_node("Credits/Text").add_text("- Viktor Hahn\n")
+	get_node("Credits/Text").add_text("- Font by thekingphoenix (")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_blue.tres"))
+	get_node("Credits/Text").append_bbcode("[url=https://opengameart.org/content/font-0]{opengameart.org}[/url]")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
+	get_node("Credits/Text").add_text(")\n")
+	get_node("Credits/Text").add_text("\n\n")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_green.tres"))
+	get_node("Credits/Text").add_text(tr("MUSIC")+"\n\n")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
+	get_node("Credits/Text").add_text("- INTRO by Jason Dagenet (")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_blue.tres"))
+	get_node("Credits/Text").append_bbcode("[url=https://opengameart.org/content/intro-sequence]{opengameart.org}[/url]")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
+	get_node("Credits/Text").add_text(")\n")
+	get_node("Credits/Text").add_text("- Battle_1 by Alexandr Zhelanov (")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_blue.tres"))
+	get_node("Credits/Text").append_bbcode("[url=https://soundcloud.com/alexandr-zhelanov]{soundcloud.com/alexandr-zhelanov}[/url]")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
+	get_node("Credits/Text").add_text(")\n")
+	get_node("Credits/Text").add_text("\n\n")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_green.tres"))
+	get_node("Credits/Text").add_text(tr("SOUNDS")+"\n\n")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
+	get_node("Credits/Text").add_text("- UI sounds by Circlerun (\n")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_blue.tres"))
+	get_node("Credits/Text").append_bbcode("[url=https://opengameart.org/content/hi-tech-button-sound-pack-i-non-themed]{opengameart.org}[/url]")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
+	get_node("Credits/Text").add_text(")\n")
+	get_node("Credits/Text").add_text("- Laser_05 by Little Robot Sound Factory (")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_blue.tres"))
+	get_node("Credits/Text").append_bbcode("[url=http://www.littlerobotsoundfactory.com]{www.littlerobotsoundfactory.com}[/url]")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
+	get_node("Credits/Text").add_text(")\n")
+	get_node("Credits/Text").add_text("- cg1, flaunch, rlaunch by Michel Baradari (")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_blue.tres"))
+	get_node("Credits/Text").append_bbcode("[url=http://apollo-music.de]{apollo-music.de}[/url]")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
+	get_node("Credits/Text").add_text(")\n")
+	get_node("Credits/Text").add_text("- 16, 17 by HorrorPen (")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_blue.tres"))
+	get_node("Credits/Text").append_bbcode("[url=https://opengameart.org/content/41-random-sound-effects]{opengameart.org}[/url]")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
+	get_node("Credits/Text").add_text(")\n")
+	get_node("Credits/Text").add_text("- space shield sounds by bart (")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_blue.tres"))
+	get_node("Credits/Text").append_bbcode("[url=https://opengameart.org/content/space-ship-shield-sounds]{opengameart.org}[/url]")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
+	get_node("Credits/Text").add_text(")\n")
+	get_node("Credits/Text").add_text("- alarm and impact sounds by Juhani Junkala (")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_blue.tres"))
+	get_node("Credits/Text").append_bbcode("[url=https://opengameart.org/content/512-sound-effects-8-bit-style]{opengameart.org}[/url]")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
+	get_node("Credits/Text").add_text(")\n")
+	get_node("Credits/Text").add_text("- explosion sounds by Viktor Hahn (")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_blue.tres"))
+	get_node("Credits/Text").append_bbcode("[url=https://opengameart.org/content/9-explosion-sounds]{opengameart.org}[/url]")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
+	get_node("Credits/Text").add_text(")\n")
+	
+	get_node("Credits/Text").connect("meta_clicked",OS,"shell_open")

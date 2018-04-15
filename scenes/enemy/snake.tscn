@@ -378,7 +378,7 @@ tracks/6/keys = {
 "values": [ true, false ]
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("Light2:energy")
+tracks/7/path = NodePath("Light:energy")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
@@ -446,7 +446,7 @@ tracks/0/keys = {
 "values": [ 0.0, 1.0, 0.0 ]
 }
 
-[node name="Enemy" type="RigidBody2D" index="0"]
+[node name="Enemy" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 22
@@ -615,7 +615,7 @@ disable_collision = true
 softness = 0.0
 _sections_unfolded = [ "Transform" ]
 
-[node name="Light2" type="Light2D" parent="." index="5"]
+[node name="Light" type="Light2D" parent="." index="5"]
 
 position = Vector2( 32, 0 )
 enabled = true

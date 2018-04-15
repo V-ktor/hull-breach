@@ -287,3 +287,4 @@ func _ready():
 	_resized()
 	delay = 0.5
 	randomize_map()
+	Music.change_to("Battle_1",true)

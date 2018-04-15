@@ -435,20 +435,6 @@ tracks/13/keys = {
 "update": 0,
 "values": [ Vector2( 0.01, 0.01 ), Vector2( 0.01, 0.01 ), Vector2( 1.2, 1.2 ) ]
 }
-tracks/14/type = "method"
-tracks/14/path = NodePath(".")
-tracks/14/interp = 1
-tracks/14/loop_wrap = true
-tracks/14/imported = false
-tracks/14/enabled = true
-tracks/14/keys = {
-"times": PoolRealArray( 3 ),
-"transitions": PoolRealArray( 1 ),
-"values": [ {
-"args": [  ],
-"method": "queue_free"
-} ]
-}
 
 [sub_resource type="Animation" id=19]
 
@@ -468,7 +454,7 @@ tracks/0/keys = {
 "values": [ 0.0, 1.0, 0.0 ]
 }
 
-[node name="Player" type="RigidBody2D" index="0"]
+[node name="Player" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 3
