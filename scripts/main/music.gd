@@ -32,6 +32,7 @@ func queue(new):
 	current = new
 
 func fade_out(time=1.0):
+	current = ""
 	anim.play("fade_out",-1,0.5/time)
 	yield(anim,"animation_finished")
 	player.stop()
