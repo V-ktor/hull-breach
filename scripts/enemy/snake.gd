@@ -1,7 +1,7 @@
 extends RigidBody2D
 
 export var hp = 4
-export var la = 12.5
+export var la = 17.5
 export var aa = 0.15
 export var score = 2
 export var size = 1
