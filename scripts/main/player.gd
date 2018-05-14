@@ -21,6 +21,7 @@ var max_rot = 50
 var shooting = 0.0
 var time = 0.5
 var invulnerable = 0.0
+var mouse = true
 var disabled = false
 
 var flash = [preload("res://scenes/particles/flash_mg.tscn"),preload("res://scenes/particles/flash_bl.tscn"),preload("res://scenes/particles/flash_pb.tscn")]
@@ -151,8 +152,11 @@ func _process(delta):
 func _physics_process(delta):
 	var thrust = float(Input.is_action_pressed("thrust"))-0.25*float(Input.is_action_pressed("reverse_thrust"))
 	var strafe = float(Input.is_action_pressed("strafe_right"))-float(Input.is_action_pressed("strafe_left"))
-	var look_at = get_global_mouse_position()
-	var angle = get_angle_to(look_at)
+	var angle = float(Input.is_action_pressed("rotate_right"))-float(Input.is_action_pressed("rotate_left"))
+	if (mouse):
+		if (angle!=0.0):
+			mouse = false
+		angle = get_angle_to(get_global_mouse_position())
 	
 	if (thrust!=0 || strafe!=0):
 		apply_impulse(global_position,la*Vector2(thrust,0.2*strafe).rotated(rotation))
@@ -166,6 +170,8 @@ func _input(event):
 	if (event is InputEventKey || event is InputEventMouseButton):
 		if (event.is_action_pressed("special")):
 			special()
+	elif (event is InputEventMouseMotion):
+		mouse = true
 
 func _collide(body):
 	damaged(1)

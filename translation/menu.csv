@@ -14,8 +14,8 @@ THRUST,Thrust
 REVERSE_THRUST,Reverse Thrust
 STRAFE_LEFT,Strafe Left
 STRAFE_RIGHT,Strafe Right
-TURN_LEFT,Turn Left
-TURN_RIGHT,Turn Right
+ROTATE_LEFT,Turn Left
+ROTATE_RIGHT,Turn Right
 SHOOT,Shoot
 SPECIAL,Special
 ADD_KEY,Add Key
@@ -40,6 +40,7 @@ SCORE,Score
 EASY,Easy
 NORMAL,Normal
 HARD,Hard
+ENGINE,Engine
 GRAPHICS,Graphics
 SOUNDS,Sounds
 FONT,font

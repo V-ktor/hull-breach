@@ -1,7 +1,7 @@
 extends Node
 
-const VERSION = "v0.9"
-const ACTIONS = ["thrust","reverse_thrust","strafe_left","strafe_right","shoot","special"]
+const VERSION = "v0.9.1"
+const ACTIONS = ["thrust","reverse_thrust","strafe_left","strafe_right","rotate_left","rotate_right","shoot","special"]
 const SHIPS = [
 {"hp":4,"sp":4,"la": 75.0,"aa":3.5,"weapon":0,"fire_rate":5.0,"scene":preload("res://scenes/ships/ship1.tscn"),"s_icon":preload("res://images/gui/ship1_icon.png"),"w_icon":preload("res://images/gui/weapon_mg.png")},
 {"hp":4,"sp":5,"la":100.0,"aa":5.0,"weapon":1,"fire_rate":8.0,"scene":preload("res://scenes/ships/ship2.tscn"),"s_icon":preload("res://images/gui/ship2_icon.png"),"w_icon":preload("res://images/gui/weapon_bl.png")},
@@ -573,6 +573,14 @@ func _ready():
 	Music.change_to("intro")
 	get_node("Credits/Text").push_font(preload("res://fonts/font_green.tres"))
 	get_node("Credits/Text").add_text("Hull Breach Credits\n\n\n")
+	get_node("Credits/Text").add_text(tr("ENGINE")+"\n\n")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
+	get_node("Credits/Text").add_text("Godot 3.0.2 (")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_blue.tres"))
+	get_node("Credits/Text").append_bbcode("[url=https://godotengine.org/]{godotengine.org}[/url]")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
+	get_node("Credits/Text").add_text(")\n\n\n")
+	get_node("Credits/Text").push_font(preload("res://fonts/font_green.tres"))
 	get_node("Credits/Text").add_text(tr("GRAPHICS")+"\n\n")
 	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
 	get_node("Credits/Text").add_text("- Viktor Hahn\n")
@@ -580,8 +588,7 @@ func _ready():
 	get_node("Credits/Text").push_font(preload("res://fonts/font_blue.tres"))
 	get_node("Credits/Text").append_bbcode("[url=https://opengameart.org/content/font-0]{opengameart.org}[/url]")
 	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
-	get_node("Credits/Text").add_text(")\n")
-	get_node("Credits/Text").add_text("\n\n")
+	get_node("Credits/Text").add_text(")\n\n\n")
 	get_node("Credits/Text").push_font(preload("res://fonts/font_green.tres"))
 	get_node("Credits/Text").add_text(tr("MUSIC")+"\n\n")
 	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
@@ -594,8 +601,7 @@ func _ready():
 	get_node("Credits/Text").push_font(preload("res://fonts/font_blue.tres"))
 	get_node("Credits/Text").append_bbcode("[url=https://soundcloud.com/alexandr-zhelanov]{soundcloud.com/alexandr-zhelanov}[/url]")
 	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
-	get_node("Credits/Text").add_text(")\n")
-	get_node("Credits/Text").add_text("\n\n")
+	get_node("Credits/Text").add_text(")\n\n\n")
 	get_node("Credits/Text").push_font(preload("res://fonts/font_green.tres"))
 	get_node("Credits/Text").add_text(tr("SOUNDS")+"\n\n")
 	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
