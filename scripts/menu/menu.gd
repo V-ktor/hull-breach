@@ -605,7 +605,7 @@ func _ready():
 	get_node("Credits/Text").push_font(preload("res://fonts/font_green.tres"))
 	get_node("Credits/Text").add_text(tr("SOUNDS")+"\n\n")
 	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
-	get_node("Credits/Text").add_text("- "+tr("UI_SOUNDS")+" "+tr("BY")+" Circlerun (\n")
+	get_node("Credits/Text").add_text("- "+tr("UI_SOUNDS")+" "+tr("BY")+" Circlerun (")
 	get_node("Credits/Text").push_font(preload("res://fonts/font_blue.tres"))
 	get_node("Credits/Text").append_bbcode("[url=https://opengameart.org/content/hi-tech-button-sound-pack-i-non-themed]{opengameart.org}[/url]")
 	get_node("Credits/Text").push_font(preload("res://fonts/font_yellow.tres"))
