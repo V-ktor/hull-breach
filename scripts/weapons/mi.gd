@@ -33,6 +33,9 @@ func _explode(body=null):
 	for c in get_node("Explosion").get_overlapping_bodies()+get_node("Explosion").get_overlapping_areas():
 		c.damaged(dmg,true)
 
+func damaged(dmg=1,by_player=false):
+	_explode()
+
 func find_target():
 	var min_dist = 9999999.0
 	target = null

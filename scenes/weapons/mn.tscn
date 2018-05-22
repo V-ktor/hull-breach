@@ -350,7 +350,7 @@ tracks/1/keys = {
 } ]
 }
 
-[node name="Mine" type="Area2D" index="0"]
+[node name="Mine" type="Area2D"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 0 )

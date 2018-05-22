@@ -29,6 +29,9 @@ func _explode(body=null):
 	for c in get_node("Explosion").get_overlapping_bodies()+get_node("Explosion").get_overlapping_areas():
 		c.damaged(dmg,true)
 
+func damaged(dmg=1,by_player=false):
+	_explode()
+
 func _physics_process(delta):
 	var dir = Vector2(0,0)
 	lv *= 0.99
