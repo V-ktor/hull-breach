@@ -1,6 +1,6 @@
 extends Node
 
-const VERSION = "v0.9.2"
+const VERSION = "v0.9.3"
 const ACTIONS = ["thrust","reverse_thrust","strafe_left","strafe_right","rotate_left","rotate_right","shoot","special"]
 const SHIPS = [
 {"hp":4,"sp":4,"la": 75.0,"aa":3.5,"weapon":0,"fire_rate":5.0,"scene":preload("res://scenes/ships/ship1.tscn"),"s_icon":preload("res://images/gui/ship1_icon.png"),"w_icon":preload("res://images/gui/weapon_mg.png")},
