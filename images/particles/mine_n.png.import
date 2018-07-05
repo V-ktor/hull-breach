@@ -7,10 +7,7 @@ path="res://.import/mine_n.png-8e4e4de8033c998128dc9cc6d97c8e01.stex"
 [deps]
 
 source_file="res://images/particles/mine_n.png"
-source_md5="97adf86858f067bee2d419d00250f819"
-
 dest_files=[ "res://.import/mine_n.png-8e4e4de8033c998128dc9cc6d97c8e01.stex" ]
-dest_md5="505df6ffff49ec208067a8bdb760bde8"
 
 [params]
 

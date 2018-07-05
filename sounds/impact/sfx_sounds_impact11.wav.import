@@ -7,10 +7,7 @@ path="res://.import/sfx_sounds_impact11.wav-0a7eb9748ad0eee020187a58b55ad5be.sam
 [deps]
 
 source_file="res://sounds/impact/sfx_sounds_impact11.wav"
-source_md5="097f91b054953fc11730ab1bbbdc8978"
-
 dest_files=[ "res://.import/sfx_sounds_impact11.wav-0a7eb9748ad0eee020187a58b55ad5be.sample" ]
-dest_md5="45b29b1917e6a8a67f1af884106fed28"
 
 [params]
 

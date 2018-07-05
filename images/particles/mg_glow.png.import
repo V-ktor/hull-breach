@@ -7,10 +7,7 @@ path="res://.import/mg_glow.png-31e7064f350c6147de5a496f1137f28f.stex"
 [deps]
 
 source_file="res://images/particles/mg_glow.png"
-source_md5="ab12d93ca82b14ca160239104d69a537"
-
 dest_files=[ "res://.import/mg_glow.png-31e7064f350c6147de5a496f1137f28f.stex" ]
-dest_md5="c2297c472c5fe077cb03f110a0696614"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/bubble_small.png-6593d81998ab94d4040fc65a8166d450.stex"
 [deps]
 
 source_file="res://images/particles/bubble_small.png"
-source_md5="6e1aeb76c0a7a32d3ba50769f093a5a5"
-
 dest_files=[ "res://.import/bubble_small.png-6593d81998ab94d4040fc65a8166d450.stex" ]
-dest_md5="622c07a073d82a0064f116b78948eb00"
 
 [params]
 

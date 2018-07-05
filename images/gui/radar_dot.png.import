@@ -7,10 +7,7 @@ path="res://.import/radar_dot.png-4eaf71b97e0b14818f118b7a2c7f7b57.stex"
 [deps]
 
 source_file="res://images/gui/radar_dot.png"
-source_md5="a493ef0e1eb0d8a62c19411ae3ea8c7e"
-
 dest_files=[ "res://.import/radar_dot.png-4eaf71b97e0b14818f118b7a2c7f7b57.stex" ]
-dest_md5="24ecb72f4db6039e18880380a4dcf999"
 
 [params]
 

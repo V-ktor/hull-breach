@@ -7,10 +7,7 @@ path="res://.import/bar_sp.png-ae028da24a1569aa0c785bd8cfd1a28c.stex"
 [deps]
 
 source_file="res://images/gui/bar_sp.png"
-source_md5="3563b068f0dfd643a383acf4d58ea2b2"
-
 dest_files=[ "res://.import/bar_sp.png-ae028da24a1569aa0c785bd8cfd1a28c.stex" ]
-dest_md5="765bb15c722e18cd877ab5f9c03fcbed"
 
 [params]
 

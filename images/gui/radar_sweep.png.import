@@ -7,10 +7,7 @@ path="res://.import/radar_sweep.png-3df386ca1d05bca441b442630d016d71.stex"
 [deps]
 
 source_file="res://images/gui/radar_sweep.png"
-source_md5="d0c4790867311b749e007b0c218999fd"
-
 dest_files=[ "res://.import/radar_sweep.png-3df386ca1d05bca441b442630d016d71.stex" ]
-dest_md5="da3fc13b2412701440e8d10ead373656"
 
 [params]
 

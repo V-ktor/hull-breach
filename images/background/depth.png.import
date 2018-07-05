@@ -7,10 +7,7 @@ path="res://.import/depth.png-1dca5fd892bffe85c2773c5e6fc8c8c3.stex"
 [deps]
 
 source_file="res://images/background/depth.png"
-source_md5="476c4c1e1ea336fefecfc065087f4e8f"
-
 dest_files=[ "res://.import/depth.png-1dca5fd892bffe85c2773c5e6fc8c8c3.stex" ]
-dest_md5="9944a8d4f93660a5bce1f4d1be46b71e"
 
 [params]
 

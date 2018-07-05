@@ -222,24 +222,36 @@ tracks/2/keys = {
 "values": [ 0.25, 0.5, 0.0 ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("Particles:emitting")
+tracks/3/path = NodePath("Light:enabled")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ true, false ]
+"values": [ true ]
 }
-tracks/4/type = "method"
-tracks/4/path = NodePath(".")
+tracks/4/type = "value"
+tracks/4/path = NodePath("Particles:emitting")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/5/type = "method"
+tracks/5/path = NodePath(".")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
 "times": PoolRealArray( 0.6 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
@@ -248,7 +260,7 @@ tracks/4/keys = {
 } ]
 }
 
-[node name="Shot" type="Node2D"]
+[node name="Shot" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 dmg = 1
@@ -263,7 +275,7 @@ _sections_unfolded = [ "Material", "Visibility" ]
 
 [node name="Light" type="Light2D" parent="." index="1"]
 
-enabled = true
+enabled = false
 editor_only = false
 texture = ExtResource( 3 )
 offset = Vector2( -16, 0 )
@@ -323,6 +335,7 @@ collision_mask = 12
 
 stream = ExtResource( 5 )
 volume_db = -14.0
+pitch_scale = 1.0
 autoplay = false
 max_distance = 2000.0
 attenuation = 1.0

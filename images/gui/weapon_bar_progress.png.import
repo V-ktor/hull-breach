@@ -7,10 +7,7 @@ path="res://.import/weapon_bar_progress.png-96d3cd9578b4946f7c18d7e1e41ddc71.ste
 [deps]
 
 source_file="res://images/gui/weapon_bar_progress.png"
-source_md5="c815e3b5bc9080dae6f2e2dd6d9b3e58"
-
 dest_files=[ "res://.import/weapon_bar_progress.png-96d3cd9578b4946f7c18d7e1e41ddc71.stex" ]
-dest_md5="49c0afc00c0208cc6db1585bfa4df7d6"
 
 [params]
 

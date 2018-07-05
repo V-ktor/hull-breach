@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://scripts/enemy/snake.gd" type="Script" id=1]
 [ext_resource path="res://scripts/shader/hit.tres" type="Shader" id=2]
@@ -8,10 +8,9 @@
 [ext_resource path="res://images/particles/bubble_small.png" type="Texture" id=6]
 [ext_resource path="res://images/particles/sphere_small_n.png" type="Texture" id=7]
 [ext_resource path="res://images/particles/splash01.png" type="Texture" id=8]
-[ext_resource path="res://images/lights/spotlight.png" type="Texture" id=9]
-[ext_resource path="res://images/particles/implosion01.png" type="Texture" id=10]
-[ext_resource path="res://images/particles/implosion04.png" type="Texture" id=11]
-[ext_resource path="res://sounds/explosions/explosion01.wav" type="AudioStream" id=12]
+[ext_resource path="res://images/particles/implosion01.png" type="Texture" id=9]
+[ext_resource path="res://images/particles/implosion04.png" type="Texture" id=10]
+[ext_resource path="res://sounds/explosions/explosion01.wav" type="AudioStream" id=11]
 
 [sub_resource type="ShaderMaterial" id=1]
 
@@ -378,48 +377,36 @@ tracks/6/keys = {
 "values": [ true, false ]
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("Light:energy")
+tracks/7/path = NodePath("Sprite:material:shader_param/hit")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ 1.0, 0.01 ]
-}
-tracks/8/type = "value"
-tracks/8/path = NodePath("Sprite:material:shader_param/hit")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ 0.0 ]
 }
-tracks/9/type = "value"
-tracks/9/path = NodePath("Sprite:material:shader_param/vanish")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/keys = {
+tracks/8/type = "value"
+tracks/8/path = NodePath("Sprite:material:shader_param/vanish")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
 "times": PoolRealArray( 0, 0.3, 0.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ 0.0, 0.0, 2.0 ]
 }
-tracks/10/type = "method"
-tracks/10/path = NodePath(".")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/keys = {
+tracks/9/type = "method"
+tracks/9/path = NodePath(".")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
 "times": PoolRealArray( 4 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
@@ -446,7 +433,7 @@ tracks/0/keys = {
 "values": [ 0.0, 1.0, 0.0 ]
 }
 
-[node name="Enemy" type="RigidBody2D"]
+[node name="Enemy" type="RigidBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 22
@@ -615,33 +602,7 @@ disable_collision = true
 softness = 0.0
 _sections_unfolded = [ "Transform" ]
 
-[node name="Light" type="Light2D" parent="." index="5"]
-
-position = Vector2( 32, 0 )
-enabled = true
-editor_only = false
-texture = ExtResource( 9 )
-offset = Vector2( 96, 0 )
-texture_scale = 1.0
-color = Color( 1, 1, 1, 1 )
-energy = 0.25
-mode = 0
-range_height = 2.0
-range_z_min = -1024
-range_z_max = 1024
-range_layer_min = 0
-range_layer_max = 0
-range_item_cull_mask = 1
-shadow_enabled = false
-shadow_color = Color( 0, 0, 0, 0 )
-shadow_buffer_size = 2048
-shadow_gradient_length = 0.0
-shadow_filter = 0
-shadow_filter_smooth = 0.0
-shadow_item_cull_mask = 1
-_sections_unfolded = [ "Offset", "Range", "Shadow", "Transform" ]
-
-[node name="Bubbles" type="Particles2D" parent="." index="6"]
+[node name="Bubbles" type="Particles2D" parent="." index="5"]
 
 modulate = Color( 1, 1, 1, 0.25098 )
 position = Vector2( 16, 0 )
@@ -665,7 +626,7 @@ h_frames = 1
 v_frames = 1
 _sections_unfolded = [ "Drawing", "Material", "Process Material", "Textures", "Time", "Transform", "Visibility" ]
 
-[node name="Implosion02" type="Particles2D" parent="." index="7"]
+[node name="Implosion02" type="Particles2D" parent="." index="6"]
 
 modulate = Color( 0.752941, 0.752941, 0.752941, 0.501961 )
 position = Vector2( 16, 0 )
@@ -683,13 +644,13 @@ visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
 draw_order = 0
 process_material = SubResource( 13 )
-texture = ExtResource( 10 )
+texture = ExtResource( 9 )
 normal_map = null
 h_frames = 5
 v_frames = 2
 _sections_unfolded = [ "Drawing", "Process Material", "Textures", "Time", "Transform", "Visibility" ]
 
-[node name="Implosion01" type="Particles2D" parent="." index="8"]
+[node name="Implosion01" type="Particles2D" parent="." index="7"]
 
 modulate = Color( 0.627451, 0.627451, 0.627451, 0.501961 )
 position = Vector2( 16, 0 )
@@ -707,17 +668,18 @@ visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
 draw_order = 0
 process_material = SubResource( 16 )
-texture = ExtResource( 11 )
+texture = ExtResource( 10 )
 normal_map = null
 h_frames = 3
 v_frames = 3
 _sections_unfolded = [ "Drawing", "Process Material", "Textures", "Time", "Transform", "Visibility" ]
 
-[node name="SoundExplosion" type="AudioStreamPlayer2D" parent="." index="9"]
+[node name="SoundExplosion" type="AudioStreamPlayer2D" parent="." index="8"]
 
 position = Vector2( 16, 0 )
-stream = ExtResource( 12 )
+stream = ExtResource( 11 )
 volume_db = 0.0
+pitch_scale = 1.0
 autoplay = false
 max_distance = 2000.0
 attenuation = 1.0
@@ -725,7 +687,7 @@ bus = "Sound"
 area_mask = 1
 _sections_unfolded = [ "Transform" ]
 
-[node name="Animation" type="AnimationPlayer" parent="." index="10"]
+[node name="Animation" type="AnimationPlayer" parent="." index="9"]
 
 root_node = NodePath("..")
 autoplay = ""

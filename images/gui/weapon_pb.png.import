@@ -7,10 +7,7 @@ path="res://.import/weapon_pb.png-ecb9df7e59a8005380bcb11dee0c1324.stex"
 [deps]
 
 source_file="res://images/gui/weapon_pb.png"
-source_md5="b5f1d4232a6ea3206ddece07594a0906"
-
 dest_files=[ "res://.import/weapon_pb.png-ecb9df7e59a8005380bcb11dee0c1324.stex" ]
-dest_md5="bf706c2e7dad906e3cd0decb4a008304"
 
 [params]
 

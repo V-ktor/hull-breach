@@ -7,10 +7,7 @@ path="res://.import/rlaunch.wav-3f1ebf991814e610091f6477021968bb.sample"
 [deps]
 
 source_file="res://sounds/weapons/rlaunch.wav"
-source_md5="22ca3eb9294270685e994162eda5dd06"
-
 dest_files=[ "res://.import/rlaunch.wav-3f1ebf991814e610091f6477021968bb.sample" ]
-dest_md5="6bba0a57b3bf3b10265f0a55a3235049"
 
 [params]
 

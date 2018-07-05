@@ -7,10 +7,7 @@ path="res://.import/shockwave.png-02ce3c6a1211d93ef5704baaa02d939f.stex"
 [deps]
 
 source_file="res://images/particles/shockwave.png"
-source_md5="1547c68cd12c7343501e65cb1cf911a8"
-
 dest_files=[ "res://.import/shockwave.png-02ce3c6a1211d93ef5704baaa02d939f.stex" ]
-dest_md5="2e206e895f97e3bdd2ddaea2a4af690d"
 
 [params]
 

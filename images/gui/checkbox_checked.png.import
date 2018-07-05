@@ -7,10 +7,7 @@ path="res://.import/checkbox_checked.png-559c05b6d2e9545217ad9312d9ca5aba.stex"
 [deps]
 
 source_file="res://images/gui/checkbox_checked.png"
-source_md5="48d48639b4a7556c02fd0624e884819c"
-
 dest_files=[ "res://.import/checkbox_checked.png-559c05b6d2e9545217ad9312d9ca5aba.stex" ]
-dest_md5="eb8b3cd625636daa93728ebb98fe471a"
 
 [params]
 

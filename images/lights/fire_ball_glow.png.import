@@ -7,10 +7,7 @@ path="res://.import/fire_ball_glow.png-753410a6a1dff8944b2a80266adf6fda.stex"
 [deps]
 
 source_file="res://images/lights/fire_ball_glow.png"
-source_md5="2c04f5791cdd2a479f3f0536485dfa96"
-
 dest_files=[ "res://.import/fire_ball_glow.png-753410a6a1dff8944b2a80266adf6fda.stex" ]
-dest_md5="461bcf0c221c42dcf62b458f8c48553d"
 
 [params]
 

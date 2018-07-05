@@ -7,10 +7,7 @@ path="res://.import/distortion02.png-690563c96bf15f1952c3141df243b141.stex"
 [deps]
 
 source_file="res://images/particles/distortion02.png"
-source_md5="dbb7d9000ce622f586636a5c7e5ca9ee"
-
 dest_files=[ "res://.import/distortion02.png-690563c96bf15f1952c3141df243b141.stex" ]
-dest_md5="e1440353b798ef59f94f7b57eea37ce6"
 
 [params]
 

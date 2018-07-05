@@ -7,10 +7,7 @@ path="res://.import/explosion01.wav-0a9e24de5e584d3108ed324f257e9d3c.sample"
 [deps]
 
 source_file="res://sounds/explosions/explosion01.wav"
-source_md5="d22611f5870448cf1e51313f50c94490"
-
 dest_files=[ "res://.import/explosion01.wav-0a9e24de5e584d3108ed324f257e9d3c.sample" ]
-dest_md5="473a76342803c5225a28d30c89d6f07e"
 
 [params]
 

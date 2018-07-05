@@ -284,6 +284,7 @@ _sections_unfolded = [ "Transform" ]
 
 stream = ExtResource( 7 )
 volume_db = 2.0
+pitch_scale = 1.0
 autoplay = false
 max_distance = 2000.0
 attenuation = 1.0
@@ -294,6 +295,7 @@ area_mask = 1
 
 stream = ExtResource( 8 )
 volume_db = -6.0
+pitch_scale = 1.0
 autoplay = false
 max_distance = 2000.0
 attenuation = 1.0

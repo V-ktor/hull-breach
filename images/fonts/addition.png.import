@@ -7,10 +7,7 @@ path="res://.import/addition.png-5de9d9d0a6c855b15201a1d9291db1e6.stex"
 [deps]
 
 source_file="res://images/fonts/addition.png"
-source_md5="df62541060ac27dbe15266938d8bcd1b"
-
 dest_files=[ "res://.import/addition.png-5de9d9d0a6c855b15201a1d9291db1e6.stex" ]
-dest_md5="2f5b180ccfb9182fd0c43cdca800f0f9"
 
 [params]
 

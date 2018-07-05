@@ -7,10 +7,7 @@ path="res://.import/space_shield_sounds-4.wav-94974edfbcd9a29d440e34f670b2abbd.s
 [deps]
 
 source_file="res://sounds/space_shield_sounds/space_shield_sounds-4.wav"
-source_md5="32d64fb8f954f80ed9aa8d65105475e6"
-
 dest_files=[ "res://.import/space_shield_sounds-4.wav-94974edfbcd9a29d440e34f670b2abbd.sample" ]
-dest_md5="6835eed9840357bf5e17ae538a2b4d25"
 
 [params]
 

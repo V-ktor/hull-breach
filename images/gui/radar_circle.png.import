@@ -7,10 +7,7 @@ path="res://.import/radar_circle.png-ffd62d007aeceec4857b12c9795f034b.stex"
 [deps]
 
 source_file="res://images/gui/radar_circle.png"
-source_md5="f0e541c3412b6e4e57c93d2d517df716"
-
 dest_files=[ "res://.import/radar_circle.png-ffd62d007aeceec4857b12c9795f034b.stex" ]
-dest_md5="6713efe06a448202b69e79727c265221"
 
 [params]
 

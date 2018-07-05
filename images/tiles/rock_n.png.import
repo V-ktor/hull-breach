@@ -7,10 +7,7 @@ path="res://.import/rock_n.png-ecf5916e1f126bba235d958bf7ca5023.stex"
 [deps]
 
 source_file="res://images/tiles/rock_n.png"
-source_md5="97f5c39d7aa1cb3a30df1f8883b34471"
-
 dest_files=[ "res://.import/rock_n.png-ecf5916e1f126bba235d958bf7ca5023.stex" ]
-dest_md5="b0424191269fcdec46b2cb090d18cb7b"
 
 [params]
 

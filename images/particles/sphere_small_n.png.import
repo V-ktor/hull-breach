@@ -7,10 +7,7 @@ path="res://.import/sphere_small_n.png-4d24ceaf179e171d44f12ceccd9076ef.stex"
 [deps]
 
 source_file="res://images/particles/sphere_small_n.png"
-source_md5="e63385fbb724257f38a90a6c6da48132"
-
 dest_files=[ "res://.import/sphere_small_n.png-4d24ceaf179e171d44f12ceccd9076ef.stex" ]
-dest_md5="3db490af0376f497a02bd708a8c81a2b"
 
 [params]
 

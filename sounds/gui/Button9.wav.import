@@ -7,10 +7,7 @@ path="res://.import/Button9.wav-d47d9e0b82d450589bcc09522e7beff8.sample"
 [deps]
 
 source_file="res://sounds/gui/Button9.wav"
-source_md5="180f5fb31fffb291a8480cd1e54ea4c8"
-
 dest_files=[ "res://.import/Button9.wav-d47d9e0b82d450589bcc09522e7beff8.sample" ]
-dest_md5="f07aae868e3336d7aa1004a030cf2f29"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/flash02.png-45a42c1bb0dd67d0a3a23d4c9c5690b1.stex"
 [deps]
 
 source_file="res://images/particles/flash02.png"
-source_md5="10fc4cd0743b29beb38348ab63243ac7"
-
 dest_files=[ "res://.import/flash02.png-45a42c1bb0dd67d0a3a23d4c9c5690b1.stex" ]
-dest_md5="936806efbd861830824b3b8a5d18d219"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/panel_weapon.png-4677fae1348a08f0f7bd7d219732532d.stex"
 [deps]
 
 source_file="res://images/gui/panel_weapon.png"
-source_md5="abf9189fbb37603a5e6f65b976cd4c8c"
-
 dest_files=[ "res://.import/panel_weapon.png-4677fae1348a08f0f7bd7d219732532d.stex" ]
-dest_md5="b50a728445cf9146592927aa473bf60a"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/cross.png-1b834b1f59d2f3ad182fc5bde62c6484.stex"
 [deps]
 
 source_file="res://images/gui/cross.png"
-source_md5="51e1d6c24516e6d80d19c3e9254891c9"
-
 dest_files=[ "res://.import/cross.png-1b834b1f59d2f3ad182fc5bde62c6484.stex" ]
-dest_md5="09d884519d8e2f824a5742018cf5aa80"
 
 [params]
 

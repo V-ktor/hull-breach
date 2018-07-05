@@ -7,10 +7,7 @@ path="res://.import/sfx_sound_bling.wav-0115eaba8b5522ec87c3de96c571f49a.sample"
 [deps]
 
 source_file="res://sounds/alarm/sfx_sound_bling.wav"
-source_md5="c28c682f8a94962f1bd451a709162b97"
-
 dest_files=[ "res://.import/sfx_sound_bling.wav-0115eaba8b5522ec87c3de96c571f49a.sample" ]
-dest_md5="4f6976d3d4724dcce50dd949e7c1fbca"
 
 [params]
 

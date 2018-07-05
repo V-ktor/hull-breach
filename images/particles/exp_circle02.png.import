@@ -7,10 +7,7 @@ path="res://.import/exp_circle02.png-9545775ca89ab51872fe87091976f030.stex"
 [deps]
 
 source_file="res://images/particles/exp_circle02.png"
-source_md5="3dc5856f1782bc0c61d98ebae80dce5e"
-
 dest_files=[ "res://.import/exp_circle02.png-9545775ca89ab51872fe87091976f030.stex" ]
-dest_md5="4299dc14af8a605825e7baa1a49ee3b5"
 
 [params]
 

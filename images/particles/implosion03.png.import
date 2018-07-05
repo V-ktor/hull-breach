@@ -7,10 +7,7 @@ path="res://.import/implosion03.png-e741be856f3ea151819d7cf5fd3f6c1c.stex"
 [deps]
 
 source_file="res://images/particles/implosion03.png"
-source_md5="dc07bf0bff2b8152630066498f1c50af"
-
 dest_files=[ "res://.import/implosion03.png-e741be856f3ea151819d7cf5fd3f6c1c.stex" ]
-dest_md5="f9c2142bdb99a6cc0474a862ce64e940"
 
 [params]
 

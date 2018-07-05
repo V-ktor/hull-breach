@@ -7,10 +7,7 @@ path="res://.import/panel_radar.png-709a4d0535f5b038ea80a05751b89c28.stex"
 [deps]
 
 source_file="res://images/gui/panel_radar.png"
-source_md5="faea44b9673c3041f46e97e145860418"
-
 dest_files=[ "res://.import/panel_radar.png-709a4d0535f5b038ea80a05751b89c28.stex" ]
-dest_md5="6d4d544216492f01c715b03e1731acbe"
 
 [params]
 

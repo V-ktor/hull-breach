@@ -7,10 +7,7 @@ path="res://.import/carrier_n.png-7c060d8caf1b5a46d9070c8b71f7562b.stex"
 [deps]
 
 source_file="res://images/ships/carrier_n.png"
-source_md5="52e09fa0de75cd5ea34ab69d08839cc9"
-
 dest_files=[ "res://.import/carrier_n.png-7c060d8caf1b5a46d9070c8b71f7562b.stex" ]
-dest_md5="b717841a3ad1ed65c006f1abcd7ab2c4"
 
 [params]
 

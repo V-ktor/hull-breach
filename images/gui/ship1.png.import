@@ -7,10 +7,7 @@ path="res://.import/ship1.png-4338f1c80a5621f61d9e93432895103c.stex"
 [deps]
 
 source_file="res://images/gui/ship1.png"
-source_md5="ed786416d74d573937edab8fb113d5bf"
-
 dest_files=[ "res://.import/ship1.png-4338f1c80a5621f61d9e93432895103c.stex" ]
-dest_md5="d117d77f148655f924aee2503ff837e2"
 
 [params]
 

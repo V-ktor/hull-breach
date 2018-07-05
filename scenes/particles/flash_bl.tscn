@@ -40,10 +40,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 1.0, 3.0 ]
+"values": [ 2.0, 4.0, 3.0 ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("Light:energy")
@@ -55,7 +55,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0, 0.05, 0.25, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, 0.25, 0.25, 0.0 ]
+"values": [ 0.0, 0.5, 1.0, 0.0 ]
 }
 tracks/4/type = "method"
 tracks/4/path = NodePath(".")
@@ -91,11 +91,11 @@ enabled = true
 editor_only = false
 texture = ExtResource( 2 )
 offset = Vector2( 0, 0 )
-texture_scale = 1.0
+texture_scale = 2.0
 color = Color( 1, 1, 1, 1 )
 energy = 0.0
 mode = 0
-range_height = 0.0
+range_height = 1.0
 range_z_min = -1024
 range_z_max = 1024
 range_layer_min = 0
@@ -111,13 +111,12 @@ shadow_item_cull_mask = 1
 
 [node name="Animation" type="AnimationPlayer" parent="." index="2"]
 
+root_node = NodePath("..")
+autoplay = "animation"
 playback_process_mode = 1
 playback_default_blend_time = 0.0
-root_node = NodePath("..")
+playback_speed = 1.0
 anims/animation = SubResource( 1 )
-playback/active = true
-playback/speed = 1.0
 blend_times = [  ]
-autoplay = "animation"
 
 

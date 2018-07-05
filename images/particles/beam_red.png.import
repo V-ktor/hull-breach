@@ -7,10 +7,7 @@ path="res://.import/beam_red.png-92f15dc95c6e25bd16aebf2c7c6671c4.stex"
 [deps]
 
 source_file="res://images/particles/beam_red.png"
-source_md5="77dd3a6142e3ac2e430d8eb2702e2406"
-
 dest_files=[ "res://.import/beam_red.png-92f15dc95c6e25bd16aebf2c7c6671c4.stex" ]
-dest_md5="77b8a0fb36c782997cbc506ed7b723dc"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/radio_checked.png-11fe7a4032dd492a291650514cb564a4.stex"
 [deps]
 
 source_file="res://images/gui/radio_checked.png"
-source_md5="78dca4ab476b662fea9ceef438d0e53d"
-
 dest_files=[ "res://.import/radio_checked.png-11fe7a4032dd492a291650514cb564a4.stex" ]
-dest_md5="9a4f9f220313bbf59b309636cebdd22a"
 
 [params]
 

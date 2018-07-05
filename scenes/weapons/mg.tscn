@@ -259,6 +259,18 @@ tracks/6/keys = {
 "method": "queue_free"
 } ]
 }
+tracks/7/type = "value"
+tracks/7/path = NodePath("Light:enabled")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="Shot" type="Node2D" index="0"]
 
@@ -276,7 +288,7 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="Light" type="Light2D" parent="." index="1"]
 
-enabled = true
+enabled = false
 editor_only = false
 texture = ExtResource( 3 )
 offset = Vector2( -16, 0 )
@@ -339,6 +351,7 @@ collision_mask = 12
 
 stream = ExtResource( 5 )
 volume_db = -16.0
+pitch_scale = 1.0
 autoplay = false
 max_distance = 2000.0
 attenuation = 1.0

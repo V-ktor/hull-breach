@@ -7,10 +7,7 @@ path="res://.import/shot03.png-08e2ca303c42065239b69730331935b3.stex"
 [deps]
 
 source_file="res://images/particles/shot03.png"
-source_md5="78c60d1d21bb843d11a66a560e71960f"
-
 dest_files=[ "res://.import/shot03.png-08e2ca303c42065239b69730331935b3.stex" ]
-dest_md5="48455f80d08731bbf8a11863d95f26d8"
 
 [params]
 

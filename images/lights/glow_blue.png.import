@@ -7,10 +7,7 @@ path="res://.import/glow_blue.png-a37402b84916fe7f54ac1786c02d2349.stex"
 [deps]
 
 source_file="res://images/lights/glow_blue.png"
-source_md5="d7826ba62b710a3938dcf940f7cca5a9"
-
 dest_files=[ "res://.import/glow_blue.png-a37402b84916fe7f54ac1786c02d2349.stex" ]
-dest_md5="677aec9694aa370ea5b759aa1b12a1f7"
 
 [params]
 

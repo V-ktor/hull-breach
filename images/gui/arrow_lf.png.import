@@ -7,10 +7,7 @@ path="res://.import/arrow_lf.png-23e6916cb53e1b1535847313f52df78d.stex"
 [deps]
 
 source_file="res://images/gui/arrow_lf.png"
-source_md5="fc4fac2fb4294771aaf5d443ca26d86a"
-
 dest_files=[ "res://.import/arrow_lf.png-23e6916cb53e1b1535847313f52df78d.stex" ]
-dest_md5="95cbce84f786398d3261f98bf1b4ddf3"
 
 [params]
 

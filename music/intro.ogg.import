@@ -7,10 +7,7 @@ path="res://.import/intro.ogg-4097668e5352cd0def768e1f40c28db6.oggstr"
 [deps]
 
 source_file="res://music/intro.ogg"
-source_md5="4cdc39bce51eb28bc8cfdfed800b89f9"
-
 dest_files=[ "res://.import/intro.ogg-4097668e5352cd0def768e1f40c28db6.oggstr" ]
-dest_md5="36014ec12919d325f113a5f3c9abe276"
 
 [params]
 

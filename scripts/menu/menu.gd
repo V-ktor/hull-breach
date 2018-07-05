@@ -22,7 +22,6 @@ var hs_level = 0
 var hs_name = ""
 var hs_score = 0
 var new_event
-var cutscene_ended = false
 var started = false
 
 
@@ -65,7 +64,6 @@ func _start_level(level):
 func _start():
 	save_settings()
 	started = true
-	cutscene_ended = false
 	UI.get_node("Radar").detected.clear()
 	if (!OS.can_use_threads()):
 		# loading in a thread does not work
@@ -412,7 +410,6 @@ func update_highscore():
 	get_node("Level/Scores").set_text(scores)
 	get_node("Level/Names").set_text(names)
 
-
 func _resized():
 	var scale = OS.get_window_size()/Vector2(320,240)
 	scale = max(round(min(scale.x,scale.y)),1.0)
@@ -455,7 +452,6 @@ func _input(event):
 			get_node("AddKey/ButtonA").grab_focus()
 
 func _ready():
-	add_user_signal("cutscene_ended")
 	get_tree().connect("screen_resized",self,"_resized")
 	get_node("Panel/VBoxContainer/Button1").grab_focus()
 	set_process_input(true)
@@ -463,6 +459,7 @@ func _ready():
 	
 	if (OS.has_feature("web")):
 		get_node("Panel/VBoxContainer/Button2").hide()
+	# Connect buttons.
 	get_node("Panel/VBoxContainer/Button1").connect("pressed",self,"_show_level")
 	get_node("Panel/VBoxContainer/Button3").connect("pressed",self,"_show_options")
 	get_node("Panel/VBoxContainer/Button4").connect("pressed",self,"_show_credits")
@@ -500,6 +497,8 @@ func _ready():
 	get_node("AddKey/ButtonA").connect("pressed",self,"_add_new_key")
 	get_node("Highscore/LineEdit").connect("text_changed",self,"_change_name")
 	get_node("Highscore/Button").connect("pressed",self,"_add_highscore")
+	
+	# Connect UI sounds.
 	for c in get_node("Panel/VBoxContainer").get_children()+get_node("Player/HBoxContainer").get_children()+get_node("Level/VBoxContainer").get_children()+get_node("Options/VBoxContainer").get_children():
 		c.connect("focus_entered",get_node("SoundH"),"play")
 		c.connect("mouse_entered",get_node("SoundH"),"play")
