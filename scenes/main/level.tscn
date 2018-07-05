@@ -84,7 +84,7 @@ adjustment_contrast = 1.0
 adjustment_saturation = 1.0
 _sections_unfolded = [ "Auto Exposure", "Background", "Glow", "Glow/levels" ]
 
-[node name="Level" type="Node"]
+[node name="Level" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
@@ -121,7 +121,7 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="Modulate" type="CanvasModulate" parent="." index="1"]
 
-color = Color( 0.376471, 0.501961, 0.752941, 1 )
+color = Color( 0.454902, 0.603922, 0.901961, 1 )
 
 [node name="Camera" type="Camera2D" parent="." index="2"]
 
